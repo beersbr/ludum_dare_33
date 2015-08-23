@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludum Dare 33: You are the monster</title>
+
+	<style type="text/css">
+		#canvas {
+			width: 1200px;
+			height: 800px;
+		}
+
+		#level_text {
+			font-size: 55px;
+			color: white;
+			position: absolute;
+			z-index: 100;
+			top: 200px;
+			margin-left: -300px;
+			left: 50%;
+			font-weight: bolder;
+			font-family: sans-serif;
+			width: 600px;
+		}
+
+		.start {
+			opacity: 1;
+		   transition: opacity 0.25s ease-in-out;
+		   -moz-transition: opacity 0.25s ease-in-out;
+		   -webkit-transition: opacity 0.25s ease-in-out;
+		}
+
+		.stop {
+			opacity: 0;
+		}
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/glmatrix-min.js"></script>
+	<script type="text/javascript" src="./js/keyboard.js"></script>
+	<script type="text/javascript" src="./js/bretter.js"></script>
+	<script type="text/javascript" src="./js/levels.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+
+	<script type="text/javascript">
+
+	game.load_list = [
+		{ type: "text", url: "/shaders/entity.fs.glsl", name: "entity-fragment" },
+		{ type: "text", url: "/shaders/entity.vs.glsl", name: "entity-vertex" },
+		{ type: "image", url: "/images/sprite.png", name: "sprite" }
+	]
+
+	window.onload = function() {
+		game.load();
+	}
+
+	</script>
+</head>
+<body>
+
+	<canvas id="canvas" width="1600px" height="1200px">
+		
+	</canvas>
+	<label id="level_text">TESET</label>
+</body>
+</html>
