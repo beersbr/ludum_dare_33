@@ -101,7 +101,7 @@ var levels = [
 		TranslateEntity(some_entity, [250, -300]);
 		some_entity.texture_id = 256;		
 
-		var some_entity = new Entity([[0, 50], [0, 0], [400, 0], [400, 50]], null, "tile");
+		some_entity = new Entity([[0, 50], [0, 0], [400, 0], [400, 50]], null, "tile");
 		TranslateEntity(some_entity, [0, -250]);
 		some_entity.texture_id = 256;
 
@@ -176,6 +176,81 @@ var levels = [
 	},
 
 	// level 4
+	function(game) { 
+		game.level_text = "We can make a better box.";
+
+		TranslateEntity(game.player, [0, -200]);
+		game.player.velocity = [0, 0];
+		game.player.power_vector = [0, 0];
+
+		var some_entity = new Entity([[0, 0], [0, 50], [2000, 50], [2000, 0]], null, "tile");
+		TranslateEntity(some_entity, [-200, -50]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 1000], [50, 1000], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [-200, -1000]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 600], [50, 600], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1800, -600]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 300], [50, 300], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1800, -950]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 300], [0, 500], [50, 500], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1750, -500]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 50], [0, 150], [50, 150], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1700, -200]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 100], [300, 100], [300, 0]], null, "tile");
+		TranslateEntity(some_entity, [1400, -150]);
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 100], [50, 200], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1750, -950])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 50], [50, 100], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [1700, -950])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 50], [500, 50], [500, 0]], null, "tile");
+		TranslateEntity(some_entity, [1200, -950])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 50], [500, 50], [500, 0]], null, "tile");
+		TranslateEntity(some_entity, [1200, -600])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 50], [500, 50], [500, 0]], null, "tile");
+		TranslateEntity(some_entity, [1200, -700])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 0], [0, 50], [100, 50]], null, "tile");
+		TranslateEntity(some_entity, [1200, -750])
+		some_entity.texture_id = 256;		
+
+		some_entity = new Entity([[0, 0], [0, 50], [550, 50], [550, 0]], null, "tile");
+		TranslateEntity(some_entity, [-150, -600])
+		some_entity.texture_id = 256;
+
+		some_entity = new Entity([[0, 50], [50, 50], [50, 0]], null, "tile");
+		TranslateEntity(some_entity, [350, -650])
+		some_entity.texture_id = 256;		
+
+		some_entity = new Entity([[0, 0], [0, 50], [100000, 50], [100000, 0]], null, "tile");
+		TranslateEntity(some_entity, [-50000, 0]);
+		some_entity.texture_id = 257;
+		some_entity.id = "GRASS";
+
+	},
+
+	// level 5
 	function(game) {
 		game.level_text = "The monster never wins. Thaks for playing.";
 
@@ -184,7 +259,7 @@ var levels = [
 		game.player.velocity = [0, 0];
 		game.player.power_vector = [0, 0];
 
-		some_entity = new Entity([[0, 0], [0, 800], [50, 800], [50, 0]], null, "tile");
+		var some_entity = new Entity([[0, 0], [0, 800], [50, 800], [50, 0]], null, "tile");
 		TranslateEntity(some_entity, [-300, -500]);
 		some_entity.texture_id = 256;
 
