@@ -2,7 +2,7 @@ var levels = [
 	// level 0
 	function(game){
 
-		game.level_text = "Bugs should stay where they're put. They dont have W/D keys on their keyboards.";
+		game.level_text = "Bugs should stay where they're put. They dont have A/D keys on their keyboards.";
 
 		var some_entity = new Entity([[0, 50], [0, 0], [800, 0], [800, 50]], null, "tile");
 		TranslateEntity(some_entity, [0, 50]);
